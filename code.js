@@ -1,5 +1,5 @@
 function isProduction(url) {
-    return url && url.indexOf('developers.binary.com') > 0;
+    return url && url.indexOf('developers.binary.me') > 0;
 }
 
 function getBaseUrl(url) {
