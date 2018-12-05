@@ -40,7 +40,7 @@ require(["docson/docson", "lib/jquery", "lib/select2.min"], function(docson) {
         if (end_note) {
             const server = getServerUrl();
             if (server && server !== defaultApiUrl) {
-                end_note.innerHTML = 'The server <a href="https://developers.binary.com/endpoint/">endpoint</a> is: ' + server;
+                end_note.innerHTML = 'The server <a href="https://developers.binary.me/endpoint/">endpoint</a> is: ' + server;
                 end_note.classList.remove('invisible');
             } else {
                 end_note.innerHTML = '';

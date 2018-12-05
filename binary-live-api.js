@@ -585,7 +585,7 @@ function getDataForSymbol(api, symbol) {
  * @param style                    - one of ['ticks', 'candles'], this will affect the return data shape,
  *                                   internally library might not always use this param when requesting, eg. when data is too large,
  *                                   library will use `candles` instead of `ticks`, this is handle by library so user do not need to worry
- * @param granularity              - default to 60, check https://developers.binary.com/api/#ticks_history
+ * @param granularity              - default to 60, check https://developers.binary.me/api/#ticks_history
  * @returns {*|Promise.<TResult>}
  */
 function getDataForContract(api, getContract, duration) {
@@ -2604,11 +2604,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 var oauthUrl = exports.oauthUrl = function oauthUrl(appId) {
-    return 'https://www.binary.com/oauth2/authorize?app_id=' + appId;
+    return 'https://www.binary.me/oauth2/authorize?app_id=' + appId;
 };
 
 var oauthUrlWithLanguage = exports.oauthUrlWithLanguage = function oauthUrlWithLanguage(appId, langCode) {
-    return 'https://www.binary.com/oauth2/authorize?app_id=' + appId + '&l=' + langCode;
+    return 'https://www.binary.me/oauth2/authorize?app_id=' + appId + '&l=' + langCode;
 };
 
 var parseOAuthResponse = exports.parseOAuthResponse = function parseOAuthResponse(responseUrl) {
